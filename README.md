@@ -6,7 +6,7 @@ Interactively learn your favorite piano pieces.
 
 ## Usage
 
-Visit [XX](XX), upload your MIDI file and start practicing!
+Visit [https://pianopad.vercel.app/](https://pianopad.vercel.app/), upload your MIDI file and start practicing!
 
 Otherwise, you can run the development version using `npm run dev`.
 
