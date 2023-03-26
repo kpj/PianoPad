@@ -5,6 +5,8 @@
   import Scoresheet from "./lib/Scoresheet.svelte";
   import Keyboard from "./lib/Keyboard.svelte";
 
+  import midiAsset from "../midi/Furelise.mid";
+
   async function getMIDINotes(midiUrl) {
     // parse midi file
     const midi = await Midi.fromUrl(midiUrl);
@@ -30,7 +32,7 @@
 </script>
 
 <main>
-  {#await getMIDINotes("midi/Furelise.mid")}
+  {#await getMIDINotes(midiAsset)}
     <p>Loading MIDI...</p>
   {:then noteList}
     <Fallingscore musicScore={noteList} />
